@@ -68,7 +68,7 @@ public class ProdutoRepository {
 		Optional<Produto> produtoEncontrado = obterPorId(produto.getId());
 		
 		if(produtoEncontrado.isEmpty()) {
-			throw new InputMismatchException("Ptoduto não encontrado.");
+			throw new InputMismatchException("Produto não encontrado.");
 		}
 		//Eu tenho que remover o produto antigo da lista 
 		deletar(produto.getId());;
